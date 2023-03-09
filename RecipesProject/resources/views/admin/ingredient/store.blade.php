@@ -1,0 +1,12 @@
+<h3>Fill Name</h3>
+<form action="{{url('ingredients/save')}}" method="POST">
+    @csrf
+    <input type="text" name="full_name">
+    <button type="submit">Send</button>
+</form>
+
+@if(isset($name))
+<div>
+    My name: {{$name}}
+</div>
+@endif
